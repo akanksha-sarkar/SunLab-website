@@ -12,7 +12,7 @@
               href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"
               href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap">
-        <link rel="stylesheet" href="{{ site.base }}/css/group.css">
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/group.css">
     </head>
     <body>
         <div class="container">
@@ -20,7 +20,7 @@
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
-                <a href="{{ site.base }}/" class="">
+                <a href="{{ site.baseurl }}/" class="">
                     <span class="logo-text">SunLab</span>
                 </a>
                 <ul class="nav nav-pills justify-content-center">
@@ -40,7 +40,7 @@
 
                         <li class="nav-item">
                             <a class="nav-link {{ maybe-active }}"
-                               href="{{ site.base }}{{ item.link }}">
+                               href="{{ site.baseurl }}{{ item.link }}">
                                 {{ item.title }}
                             </a>
                         </li>
@@ -75,6 +75,6 @@
 
         <!-- Support retina images. -->
         <script type="text/javascript"
-                src="{{ site.base }}/js/srcset-polyfill.js"></script>
+                src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
     </body>
 </html>

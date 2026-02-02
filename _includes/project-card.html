@@ -7,7 +7,7 @@
             {% assign imgurl = project.image %}
             {% capture init %}{{ project.image | slice: 0,1 }}{% endcapture %}
             {% if init == "/" %}
-                {% capture imgurl %}{{site.base}}{{project.image}}{% endcapture %}
+                {% capture imgurl %}{{site.baseurl}}{{project.image}}{% endcapture %}
             {% endif %}
             <img class="img-fluid mb-3" src="{{imgurl}}" alt="{{project.title}}"/>
         {% endif %}
