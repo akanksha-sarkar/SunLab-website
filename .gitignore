@@ -1,4 +1,4 @@
 _site
-_includes/pubs.html
+!_includes/pubs.html
 /test-deploy.sh
 Gemfile.lock
