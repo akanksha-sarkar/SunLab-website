@@ -19,15 +19,12 @@ there by default by Bootstrap columns.
 
 {% endcomment %}
 
-{% if person.webpage %}
-    {% capture name %}
-        <a href="{{ person.webpage | escape }}"> {{ person.display_name }} </a>
-    {% endcapture %}
-{% else %}
-    {% assign name = person.display_name %}
-{% endif %}
+{% assign name = person.display_name %}
 
 {% if include.image %}
+    {% if person.webpage %}
+        <a class="person-card-link" href="{{ person.webpage | escape }}">
+    {% endif %}
     <div class="person person-with-image row align-items-center">
         <div class="col-auto">
             {% include person-image.html person=person %}
@@ -39,11 +36,20 @@ there by default by Bootstrap columns.
             {% endif %}
         </div>
     </div>
+    {% if person.webpage %}
+        </a>
+    {% endif %}
 {% else %}
+    {% if person.webpage %}
+        <a class="person-card-link" href="{{ person.webpage | escape }}">
+    {% endif %}
     <div class="person person-without-image">
         {{ name }}
         {% if person.bio %}
             <span class="bio">{{person.bio}}</span>
         {% endif %}
     </div>
+    {% if person.webpage %}
+        </a>
+    {% endif %}
 {% endif %}

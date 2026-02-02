@@ -5,25 +5,15 @@ notitle: true
 
 # groups of columns of {roles: list, width: num, image: bool}
 role-tables:
-- - roles: [faculty, postdoc, staff]
-    width: 4
+- - roles: [faculty, Phd, MS, UG]
+    width: 12
     image: true
-  - roles: [grad]
-    width: 8
-    image: true
-- - roles: [collab, ugrad, ugrad-alum]
-    width: 5
-    image: false
-  - roles: [alum]
-    width: 7
-    image: false
 
 ---
 
 <div class="jumbotron">
     <p>
-        The <b>Awesome Research Group</b> at <b>Example U</b> does all sorts of
-        research. Here is a place where we tell you exactly what that is!
+        <b>SunLab</b> at Cornell University works on building intelligent systems that collaborate with scientists to accelerate discovery.
     </p>
 </div>
 
@@ -43,21 +33,6 @@ role-tables:
     {% endif %}
 </section>
 
-<section>
-    <h2>Research</h2>
-    <div class="card-columns">
-        {% comment %}
-        Sort the projects by date, putting those without dates last
-        {% endcomment %}
-        {% assign projects_by_date = site.projects | sort: 'last-updated', 'first' %}
-        {% assign projects_by_date = projects_by_date | reverse %}
-        {% for p in projects_by_date %}
-            {% if p.status != "inactive" %}
-                {% include project-card.html project=p %}
-            {% endif %}
-        {% endfor %}
-    </div>
-</section>
 
 <div id="people">
     <h2>People</h2>

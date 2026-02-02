@@ -3,17 +3,32 @@
 
 $gray: #999;
 $light-gray: #EEE;
+$primary: #2b6cb0;
+$primary-dark: #1f4f82;
+$accent: #e6f0fb;
 
 /* Space out content a bit */
 body {
     padding-top: 20px;
+    font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    background: #fafbfc;
 }
+.header,
+h1, h2, h3, h4, h5, h6,
+.nav, .nav-link {
+    font-family: "Nunito", "Helvetica Neue", Arial, sans-serif;
+}
+
 
 .header {
     border-bottom: 1px solid $light-gray;
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-align: center;
+    background: #fff;
+    align-items: center;
+    padding-top: 4px;
 }
 
 .footer {
@@ -29,7 +44,7 @@ body {
 }
 
 .fa {
-    color: $gray;
+    color: $primary;
 }
 a > .fa {
     // make sure that font-awesome icons are underlined in links
@@ -48,7 +63,8 @@ a > .fa {
     text-align: justify;
     padding-top: 1.5em;
     padding-bottom: 0.5em;
-    font-size: 125%
+    font-size: 125%;
+    background: $accent;
 }
 
 /* Group logo */
@@ -56,6 +72,58 @@ a > .fa {
     width: 154px;
     height: 35px;
     margin: 2px 0 8px 0;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: $primary;
+    display: inline-block;
+    margin: 2px 0 8px 0;
+}
+
+a, a:visited {
+    color: $primary;
+}
+
+a:hover, a:focus {
+    color: $primary-dark;
+    text-decoration: none;
+}
+
+.nav-pills .nav-link {
+    color: $primary;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    line-height: 1;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.nav-pills .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav.nav-pills {
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: $primary;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $primary-dark;
 }
 
 /* Front page news. */
@@ -141,7 +209,102 @@ section {
     }
 }
 
+/* People layout: centered cards per role */
+.role {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+    overflow-x: auto;
+}
+
+.role .person {
+    margin-bottom: 0;
+    flex: 0 0 200px;
+    justify-content: center;
+}
+
+/* Give role headings breathing room */
+.role + h3,
+h3 + .role {
+    margin-top: 16px;
+}
+
+.person-with-image {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+}
+
+.person-with-image.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.person-with-image .col,
+.person-with-image .col-auto {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Prettier people cards */
+.role .person-with-image {
+    background: #fff;
+    border: 1px solid $light-gray;
+    border-radius: 14px;
+    padding: 14px 12px 12px;
+    min-height: 155px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.role .person-with-image:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.role .person-with-image .profile {
+    height: 88px;
+    width: 88px;
+    margin: 2px auto 0;
+}
+
+.role .person-with-image .person-name {
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.person-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.person-card-link:hover,
+.person-card-link:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
 svg {
     // make the alignment just like img from bootstrap's reboot.scss
     vertical-align: middle;
+}
+
+/* Photo gallery heading */
+.gallery-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 6px 0 18px;
+}
+
+.gallery-cat-gif {
+    width: 120px;
+    height: auto;
 }

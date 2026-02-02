@@ -10,7 +10,7 @@ _includes/pubs.html: bib/pubs.bib bib/publications.tmpl
 	$(BIBBLE) $+ > $@
 
 build: _includes/pubs.html
-	jekyll build
+	bundle exec jekyll build
 
 # you can configure these at the shell, e.g.:
 # SERVE_PORT=5001 make serve
@@ -18,7 +18,7 @@ SERVE_HOST ?= 127.0.0.1
 SERVE_PORT ?= 5000
 
 serve: _includes/pubs.html
-	jekyll serve --port $(SERVE_PORT) --host $(SERVE_HOST)
+	bundle exec jekyll serve --port $(SERVE_PORT) --host $(SERVE_HOST) --livereload --force_polling
 
 clean:
 	$(RM) -r _site _includes/pubs.html
