@@ -6,6 +6,8 @@ description: |
   varius. Pellentesque habitant morbi tristique senectus et netus et malesuada
   fames ac turpis egestas.
 
+link: https://example.com/project-page
+
 people:
   - storm
   - profx

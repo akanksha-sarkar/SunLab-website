@@ -1,8 +1,21 @@
 
 {% assign project = include.project %}
+{% assign href = nil %}
+{% if project.link %}
+    {% capture link_init %}{{ project.link | slice: 0,4 }}{% endcapture %}
+    {% if link_init == "http" %}
+        {% assign href = project.link %}
+    {% else %}
+        {% assign href = project.link | relative_url %}
+    {% endif %}
+{% endif %}
 
-<div class="card">
-    <div class="card-body">
+<div class="card project-card">
+    {% if href %}
+        <a class="card-body project-card-link" href="{{ href }}">
+    {% else %}
+        <div class="card-body">
+    {% endif %}
         {% if project.image %}
             {% assign imgurl = project.image %}
             {% capture init %}{{ project.image | slice: 0,1 }}{% endcapture %}
@@ -24,7 +37,11 @@
         <div class="card-text">
             {{ project.description | markdownify }}
         </div>
-    </div>
+    {% if href %}
+        </a>
+    {% else %}
+        </div>
+    {% endif %}
     {% if project.people %}
         <div class="card-footer d-flex flex-row flex-wrap justify-content-center">
             {% for uname in project.people %}

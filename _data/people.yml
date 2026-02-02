@@ -55,6 +55,11 @@ Ethan:
     image: /img/people/ethan.jpg
     webpage: "https://ethan-y-lin.github.io/"
 
+Jerome:
+    display_name: "Jerome Hsu"
+    role: UG
+    image: 
+
 Jonathan:
     display_name: "Jonathan Chen"
     role: UG
