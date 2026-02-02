@@ -1,5 +1,6 @@
 name: SunLab at Cornell University
-url: http://awesome.example.edu
+url: "https://akanksha-sarkar.github.io"
+baseurl: "/SunLab-website"
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 
