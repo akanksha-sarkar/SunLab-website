@@ -44,3 +44,12 @@ navigation:
     link: /publications.html
   - title: Photo Gallery
     link: /gallery.html
+
+exclude:
+  - vendor
+  - vendor/bundle
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .bundle
+  - .github
