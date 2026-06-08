@@ -1,6 +1,8 @@
 name: SunLab at Cornell University
-url: "https://akanksha-sarkar.github.io"
-baseurl: "/SunLab-website"
+url: "https://lab.jenjsun.com"
+baseurl: ""
+pi_site: "https://jenjsun.com/"
+pi_name: "Jennifer J. Sun"
 
 exclude: [bibble, README.md, Makefile, screenshot.png]
 

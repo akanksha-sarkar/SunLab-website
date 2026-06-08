@@ -126,13 +126,31 @@ a > .fa {
     margin: 2px 0 8px 0;
 }
 
+.site-brand {
+    display: inline-block;
+    margin: 2px 0 8px 0;
+}
+
 .logo-text {
     font-size: 22px;
     font-weight: 700;
     letter-spacing: 0.5px;
     color: $primary;
     display: inline-block;
-    margin: 2px 0 8px 0;
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    color: $gray;
+    margin-top: 2px;
+
+    a {
+        color: $gray;
+    }
+
+    a:hover, a:focus {
+        color: $primary;
+    }
 }
 
 a, a:visited {

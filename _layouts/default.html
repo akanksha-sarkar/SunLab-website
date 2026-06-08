@@ -20,9 +20,14 @@
             <div class="header d-flex
                         flex-column
                         flex-md-row justify-content-md-between">
-                <a href="{{ site.baseurl }}/" class="">
-                    <span class="logo-text">SunLab</span>
-                </a>
+                <div class="site-brand">
+                    <a href="{{ site.baseurl }}/">
+                        <span class="logo-text">SunLab</span>
+                    </a>
+                    <div class="logo-subtitle">
+                        <a href="{{ site.pi_site }}">{{ site.pi_name }}</a>
+                    </div>
+                </div>
                 <ul class="nav nav-pills justify-content-center">
 
                     {% assign shorturl = page.url | replace:'.html','' | replace:'index','' %}
