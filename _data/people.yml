@@ -71,6 +71,11 @@ Mihir:
     image: /img/people/mihir.png
     webpage: "https://miwi343.github.io/"
 
+Andrei:
+    display_name: "Andrei Codreanu"
+    role: UG
+    image: /img/people/andrei.png
+
 Ben:
     display_name: "Ben Koppe"
     role: alum
