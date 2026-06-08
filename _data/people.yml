@@ -21,6 +21,7 @@ Param:
     display_name: "Param Mohapatra"
     role: Phd
     image: /img/people/param.png
+    bib_names: ["Mohapatra, Paramjyoti", "Paramjyoti Mohapatra"]
 
 Xinyu:
     display_name: "Xinyu Yang"
@@ -32,42 +33,65 @@ Yijia:
     display_name: "Yijia Dai"
     role: Phd
     image: /img/people/yijia.jpeg
-    webpage: "https://daiyijia02.github.io"
+    webpage: "https://daiyijia02.github.io/"
+
+James:
+    display_name: "James Kim"
+    role: Phd
+    image: /img/people/james.jpg
+    webpage: "https://www.biojameskim.me/"
+
+Ziang:
+    display_name: "Ziang Liu"
+    role: Phd
+    image: /img/people/ziang.png
+    webpage: "https://www.ziangliu.com/"
 
 Akanksha:
     display_name: "Akanksha Sarkar"
     role: MS
-    
-James:
-    display_name: "James Kim"
-    role: MS
-    image: /img/people/james.jpg
-    webpage: "http://biojameskim.me/"
-
-Ben:
-    display_name: "Ben Koppe"
-    role: UG
-
-
-Ethan:
-    display_name: "Ethan Lin"
-    role: UG
-    image: /img/people/ethan.jpg
-    webpage: "https://ethan-y-lin.github.io/"
+    image: /img/people/akanksha.jpg
+    webpage: "https://akanksha-sarkar.github.io/"
 
 Jerome:
     display_name: "Jerome Hsu"
     role: UG
-    image: 
-
-Jonathan:
-    display_name: "Jonathan Chen"
-    role: UG
-    image: /img/people/jonathan.JPG
+    image: /img/people/jerome.png
+    webpage: "https://jerometh.github.io/jerome-tzehou-hsu/"
 
 Ryan:
     display_name: "Ryan Ye"
     role: UG
     image: /img/people/ryan.jpeg
-    webpage: "https://www.linkedin.com/in/rmy43/"
+    webpage: "https://ryanmye.github.io/aboutme/"
+
+Mihir:
+    display_name: "Mihir Kulshreshtha"
+    role: UG
+    image: /img/people/mihir.png
+    webpage: "https://miwi343.github.io/"
+
+Ben:
+    display_name: "Ben Koppe"
+    role: alum
+    image: /img/people/ben.png
+    webpage: "https://thekoppe.com/"
+
+Ethan:
+    display_name: "Ethan Lin"
+    role: alum
+    image: /img/people/ethan.jpg
+    webpage: "https://ethan-y-lin.github.io/"
+
+Jonathan:
+    display_name: "Jonathan Chen"
+    role: alum
+    image: /img/people/jonathan.JPG
+    webpage: "https://www.jonochen.net/"
+
+Elowen:
+    display_name: "Elowen Sun"
+    role: alum
+    image: /img/people/elowen.jpg
+    bio: Honorary Lab Member
 

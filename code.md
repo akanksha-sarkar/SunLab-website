@@ -12,6 +12,18 @@ notitle: true
 
 <div class="card-columns">
   <div class="card">
+    <img class="card-img-top" src="{{ site.baseurl }}/img/gallery/snipe-awards-2026.jpg" alt="Snipe Awards 2026">
+    <div class="card-body">
+      <p class="card-text"><strong>Snipe Awards 2026</strong></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="{{ site.baseurl }}/img/gallery/lab-dinner-2025.jpg" alt="Lab Dinner 2025">
+    <div class="card-body">
+      <p class="card-text"><strong>Lab Dinner 2025</strong></p>
+    </div>
+  </div>
+  <div class="card">
     <img class="card-img-top" src="{{ site.baseurl }}/img/gallery/secret-santa-2025.jpg" alt="Secret Santa 2025">
     <div class="card-body">
       <p class="card-text"><strong>Secret Santa 2025</strong> </p>
@@ -24,9 +36,9 @@ notitle: true
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="{{ site.baseurl }}/img/gallery/lab-dinner-2024.jpg" alt="End-of-year celebration">
+    <img class="card-img-top" src="{{ site.baseurl }}/img/gallery/lab-dinner-2024.jpg" alt="Group Dinner 2024">
     <div class="card-body">
-      <p class="card-text"><strong>Group Dinner</strong></p>
+      <p class="card-text"><strong>Group Dinner 2024</strong></p>
     </div>
   </div>
   <div class="card">

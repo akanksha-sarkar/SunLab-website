@@ -31,10 +31,7 @@
                         {% assign itemshorturl = item.link | replace:'.html','' %}
 
                         {% assign maybe-active = '' %}
-                        {% if item.title == 'Research' and page.layout == 'project' %}
-                            {% assign maybe-active = 'active' %}
-                        {% endif %}
-                        {% if itemshorturl == shorturl or is-research %}
+                        {% if itemshorturl == shorturl %}
                             {% assign maybe-active = 'active' %}
                         {% endif %}
 
@@ -68,5 +65,7 @@
         <!-- Support retina images. -->
         <script type="text/javascript"
                 src="{{ site.baseurl }}/js/srcset-polyfill.js"></script>
+        <script type="text/javascript"
+                src="{{ site.baseurl }}/js/about-tabs.js"></script>
     </body>
 </html>

@@ -9,24 +9,24 @@
 				<big><strong>{{ entry.fields['year'] }}</strong></big><br />
 				{% endif %}
 				{%- set prev_year = entry.fields['year'] %}
+				{%- if entry.fields['month'] %}
 				{{ entry.fields['month']|monthname }}
+				{%- endif %}
 			</span>
 		</td>
 		<td class="publication">
 			<span class="pubtitle">
 				{%- set url = entry|main_url %}
 				{%- if url %}
-				<img src="img/pdficon_small.png" width="16"
-					height="16" alt="PDF" />
 				<a href="{{ url|escape }}">{{ entry|title }}</a>.
 				{%- else %}
 				{{ entry|title }}.
 				{%- endif %}
 			</span><br />
 			<span class="authors">
-				{{ entry.persons['author']|author_list }}.
+				{{ entry.persons['author']|lab_author_list|safe }}.
 			</span><br />
-			<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue -}}</span>.
+			<span class="venuetype">{{ entry|venue_type -}}</span><span class="venue">{{ entry|venue_with_year -}}</span>.
 			{%- if entry.fields['note'] %}
 			<span class="note">
 			{{ entry.fields['note']|escape }}.
@@ -34,8 +34,13 @@
 			{%- endif %}
 			<br />
 			<span class="links">
+			{%- if 'google_scholar_url' in entry.fields %}
+				[<a href="{{ entry.fields['google_scholar_url']|escape }}">Google Scholar</a>]
+			{%- endif %}
 			{%- for type, url in (entry|extra_urls).items() %}
+				{%- if type != 'google scholar' %}
 				[<a href="{{ url|escape }}">{{ type|escape }}</a>]
+				{%- endif %}
 			{%- endfor %}
 				{%- if entry.fields['abstract'] %}
 				[<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);" onclick="$('#abstract_{{entry.fields['key']}}').slideToggle('fast');return false;">abstract</a>]

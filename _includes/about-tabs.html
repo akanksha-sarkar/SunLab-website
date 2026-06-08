@@ -1,0 +1,31 @@
+{% assign tabs = site.data.about.tabs %}
+
+<section id="about" class="about-section">
+    <ul class="nav nav-pills about-tabs" role="tablist">
+        {% for tab in tabs %}
+            <li class="nav-item" role="presentation">
+                <button type="button"
+                        class="nav-link about-tab{% if forloop.first %} active{% endif %}"
+                        role="tab"
+                        aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                        aria-controls="about-{{ tab.id }}"
+                        id="about-tab-{{ tab.id }}"
+                        data-about-tab="about-{{ tab.id }}">
+                    {{ tab.title }}
+                </button>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <div class="about-tab-panels">
+        {% for tab in tabs %}
+            <div class="about-tab-panel{% if forloop.first %} active{% endif %}"
+                 role="tabpanel"
+                 id="about-{{ tab.id }}"
+                 aria-labelledby="about-tab-{{ tab.id }}"
+                 {% unless forloop.first %}hidden{% endunless %}>
+                {{ tab.content | markdownify }}
+            </div>
+        {% endfor %}
+    </div>
+</section>

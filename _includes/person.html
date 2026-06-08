@@ -14,9 +14,6 @@ Usage:
 
 Use the image parameter to include or not include an image.
 
-Note that pl-0 just removes the left padding from the name part that is put
-there by default by Bootstrap columns.
-
 {% endcomment %}
 
 {% assign name = person.display_name %}
@@ -25,16 +22,16 @@ there by default by Bootstrap columns.
     {% if person.webpage %}
         <a class="person-card-link" href="{{ person.webpage | escape }}">
     {% endif %}
-    <div class="person person-with-image row align-items-center">
-        <div class="col-auto">
+    <div class="person person-with-image">
+        {% if person.webpage %}
+            {% include person-image.html person=person nolink=true %}
+        {% else %}
             {% include person-image.html person=person %}
-        </div>
-        <div class="col pl-0">
-            <h6 class="person-name"> {{ name }} </h6>
-            {% if person.bio %}
-                <div class="bio">{{person.bio}}</div>
-            {% endif %}
-        </div>
+        {% endif %}
+        <h6 class="person-name">{{ name }}</h6>
+        {% if person.bio %}
+            <div class="bio">{{ person.bio }}</div>
+        {% endif %}
     </div>
     {% if person.webpage %}
         </a>
@@ -46,7 +43,7 @@ there by default by Bootstrap columns.
     <div class="person person-without-image">
         {{ name }}
         {% if person.bio %}
-            <span class="bio">{{person.bio}}</span>
+            <span class="bio">{{ person.bio }}</span>
         {% endif %}
     </div>
     {% if person.webpage %}

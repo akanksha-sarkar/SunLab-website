@@ -1,0 +1,25 @@
+tabs:
+  - id: overview
+    title: Overview
+    content: |
+      **SunLab** at Cornell University builds intelligent systems that collaborate with scientists to accelerate discovery. We work across machine learning, ecology, neuroscience, and language modeling to develop methods and agents that help researchers extract insight from complex scientific data.
+
+  - id: ai4science
+    title: AI for Science
+    content: |
+      We design and evaluate AI systems that support real scientific workflows ranging from biomedical imaging pipelines to neuroscience analysis. We often collaborate with scientific labs like the <a href="https://www.birds.cornell.edu/home">Cornell Lab of Ornithology</a> and <a href="https://www.janelia.org/">Howard Hughes Medical Institute</a>. Some recent works include benchmarking LLM coding agents on end-to-end behavioral neuroscience pipelines and studying when simple agent designs outperform human experts on bespoke scientific datasets.
+
+  - id: animal-behavior
+    title: Animal Behavior
+    content: |
+      We use transformer-based generative models to forecast frame-by-frame social behavior in animals such as fruit flies, and examine what these models learn about real-world behavior. By connecting model internals to biological hypotheses, we aim to bridge computational representations with ethology and neuroscience.
+
+  - id: computer-vision
+    title: Computer Vision
+    content: |
+      We build computer vision methods for real-world video, with a focus on scientific and ecological applications. Our work includes benchmarks for in-the-wild behavior recognition built from operational ecology pipelines, interactive video segmentation, and understanding how objects change and move over time in video.
+
+  - id: language-modeling
+    title: Language Modeling
+    content: |
+      We study how language models learn structure in sequential data, including in-context learning of hidden Markov models and limited-memory architectures that externalize factual knowledge during pre-training. This work connects foundations of language modeling to scientific prediction and discovery.

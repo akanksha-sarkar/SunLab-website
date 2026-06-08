@@ -2,3 +2,5 @@ _site
 !_includes/pubs.html
 /test-deploy.sh
 Gemfile.lock
+.venv/
+bib/.scholar_cache.json

@@ -1,0 +1,6 @@
+# Jennifer Sun's Google Scholar profile (source for automated publications)
+scholar_id: TejzmcwAAAAJ
+scholar_url: https://scholar.google.com/citations?user=TejzmcwAAAAJ
+
+# Re-fetch from Scholar if the cache is older than this many days
+cache_max_age_days: 7

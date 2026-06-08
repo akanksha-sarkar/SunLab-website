@@ -1,0 +1,4 @@
+scholarly>=1.7.0
+PyYAML>=6.0
+pybtex>=0.24.0
+Jinja2>=3.0
