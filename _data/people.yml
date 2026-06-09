@@ -16,42 +16,50 @@ Linxi:
     webpage: "https://linxi-zhao.github.io/"
     role: grad
     image: /img/people/linxi.jpeg
+    bio: PhD co-advised with Kilian 
 
 Param:
     display_name: "Param Mohapatra"
     role: grad
     image: /img/people/param.png
     bib_names: ["Mohapatra, Paramjyoti", "Paramjyoti Mohapatra"]
+    bio: PhD 
 
 Xinyu:
     display_name: "Xinyu Yang"
     role: grad
     image: /img/people/xinyu.jpg
     webpage: "https://youngxinyu1802.github.io/"
+    bio: PhD   
 
 Yijia:
     display_name: "Yijia Dai"
     role: grad
     image: /img/people/yijia.jpeg
     webpage: "https://daiyijia02.github.io/"
+    bio: PhD co-advised with Sarah Dean
+    
 
 James:
     display_name: "James Kim"
     role: grad
     image: /img/people/james.jpg
     webpage: "https://www.biojameskim.me/"
-
+    bio: PhD co-advised with Peter Frazier
+    
 Ziang:
     display_name: "Ziang Liu"
     role: grad
     image: /img/people/ziang.png
     webpage: "https://www.ziangliu.com/"
+    bio: PhD  
 
 Akanksha:
     display_name: "Akanksha Sarkar"
     role: grad
     image: /img/people/akanksha.jpg
     webpage: "https://akanksha-sarkar.github.io/"
+    bio: MS
 
 Jerome:
     display_name: "Jerome Hsu"
