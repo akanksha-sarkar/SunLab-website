@@ -7,49 +7,49 @@ profx:
 
 Kai:
     display_name: "Kai Horstmann"
-    role: Phd
+    role: grad
     image: /img/people/kai.jpeg
     webpage: "https://www.linkedin.com/in/kai-horstmann/"
 
 Linxi:
     display_name: "Linxi Zhao"
     webpage: "https://linxi-zhao.github.io/"
-    role: Phd
+    role: grad
     image: /img/people/linxi.jpeg
 
 Param:
     display_name: "Param Mohapatra"
-    role: Phd
+    role: grad
     image: /img/people/param.png
     bib_names: ["Mohapatra, Paramjyoti", "Paramjyoti Mohapatra"]
 
 Xinyu:
     display_name: "Xinyu Yang"
-    role: Phd
+    role: grad
     image: /img/people/xinyu.jpg
     webpage: "https://youngxinyu1802.github.io/"
 
 Yijia:
     display_name: "Yijia Dai"
-    role: Phd
+    role: grad
     image: /img/people/yijia.jpeg
     webpage: "https://daiyijia02.github.io/"
 
 James:
     display_name: "James Kim"
-    role: Phd
+    role: grad
     image: /img/people/james.jpg
     webpage: "https://www.biojameskim.me/"
 
 Ziang:
     display_name: "Ziang Liu"
-    role: Phd
+    role: grad
     image: /img/people/ziang.png
     webpage: "https://www.ziangliu.com/"
 
 Akanksha:
     display_name: "Akanksha Sarkar"
-    role: MS
+    role: grad
     image: /img/people/akanksha.jpg
     webpage: "https://akanksha-sarkar.github.io/"
 
