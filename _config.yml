@@ -16,10 +16,8 @@ permalink: /blog/:year/:month/:day/:title.html
 roles:
   - key: faculty
     name: Faculty
-  - key: Phd
-    name: PhD Students
-  - key: MS
-    name: MS Students
+  - key: grad
+    name: Graduate Students
   - key: UG
     name: Undergraduate Students
   - key: alum
