@@ -17,7 +17,7 @@ roles:
   - key: faculty
     name: Faculty
   - key: grad
-    name: Graduate Students
+    name: Grad Students
   - key: UG
     name: Undergraduate Students
   - key: alum

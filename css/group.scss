@@ -215,7 +215,6 @@ ul.news {
 }
 
 @media (min-width: 768px) {
-    .role.grad      { column-count: 2 }
     .project-people { column-count: 3 }
     .card-columns   { column-count: 3 }
 }
@@ -311,6 +310,11 @@ section {
         display: block;
         margin-bottom: 0;
     }
+
+    .role {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .people-role-heading {
@@ -338,17 +342,18 @@ $person-card-height: 165px;
     flex: 0 0 $person-card-width;
     width: $person-card-width;
     max-width: $person-card-width;
-    height: $person-card-height;
+    min-height: $person-card-height;
+    height: auto;
 }
 
 .person-with-image {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
     width: 100%;
-    height: 100%;
+    min-height: 100%;
 }
 
 /* Prettier people cards */
@@ -388,27 +393,26 @@ $person-card-height: 165px;
 }
 
 .role .person-with-image .bio {
-    font-size: 0.75rem;
-    line-height: 1.2;
+    font-size: 0.72rem;
+    line-height: 1.25;
     margin-top: 2px;
     width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
+    overflow: visible;
 }
 
-/* Keep all 6 PhD students on one row on desktop (no horizontal scroll) */
+/* Grad students: centered rows of uniform cards */
 @media (min-width: 992px) {
-    .role.Phd {
-        flex-wrap: nowrap;
-        gap: 8px;
+    .role.grad {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
 
         > .person,
         > .person-card-link {
-            flex: 1 1 0;
-            width: auto;
-            min-width: 0;
-            max-width: none;
+            flex: 0 0 $person-card-width;
+            width: $person-card-width;
+            max-width: $person-card-width;
         }
     }
 }
